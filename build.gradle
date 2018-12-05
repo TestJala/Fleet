@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group 'Fleet'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.14.0'
+    testCompile group: 'io.cucumber', name: 'cucumber-java', version: '2.4.0'
+    testCompile group: 'io.cucumber', name: 'cucumber-picocontainer', version: '2.4.0'
+    testCompile group: 'io.cucumber', name: 'cucumber-testng', version: '2.4.0'
+}
